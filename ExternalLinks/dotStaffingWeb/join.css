@@ -1,0 +1,382 @@
+* {
+    font-family: 'Raleway', sans-serif;
+
+}
+
+/* NAVIGATION */
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+nav a {
+    font-size: 18px;
+    padding: 60px 80px;
+    color: rgba(0, 0, 0, 0.5);
+}
+nav a strong {
+    font-size: 18px;
+    text-decoration: line-through;
+    transition: all 0.3s ease-in-out 0.0s;
+}
+nav a:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    color: black;
+    overflow: hidden;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
+}
+  
+/* When the screen is less than 1050 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 1050px) {
+    .topnav a:not(:first-child) {
+      display: none;
+    }
+    .topnav a.icon {
+      float: right;
+      display: block;
+      width: 100%;
+      text-align: right;
+    }
+    nav a {
+        padding: 20px 80px;
+    }
+    nav .home, nav .icon {
+        padding: 40px 80px;
+        z-index: 1;
+    }
+}
+  
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 1050px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .topnav.responsive {float: none;}
+    .topnav.responsive {position: relative;}
+    .topnav.responsive {
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
+}
+
+
+/* IMAGES Of the MODELS */
+
+.imgContent {
+  justify-content: center;
+  display: inline-flex;
+  width: 100%;
+}
+.imgContent .images img {
+  width: 100%;
+}
+
+
+/* FORM */
+
+
+
+
+button {
+  overflow: visible;
+}
+
+button, select {
+  text-transform: none;
+}
+
+button, input, select, textarea {
+  color: #5A5A5A;
+  font: inherit;
+  margin: 0;
+}
+
+input {
+  line-height: normal;
+}
+
+textarea {
+  overflow: auto;
+}
+
+#container {
+  border: solid 2px #474544;
+  max-width: 768px;
+  margin: 60px auto;
+  position: relative;
+}
+
+form {
+  padding: 37.5px;
+  margin: 50px 0;
+}
+
+h1 {
+  color: #474544;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 7px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.underline {
+  border-bottom: solid 2px #474544;
+  margin: -0.512em auto;
+  width: 80px;
+}
+
+.icon_wrapper {
+  margin: 50px auto 0;
+  width: 100%;
+}
+
+.icon {
+  display: block;
+  fill: #474544;
+  height: 50px;
+  margin: 0 auto;
+  width: 50px;
+}
+
+.email {
+    float: right;
+    width: 45%;
+}
+
+input[type='text'], [type='email'], select, textarea {
+    background: none;
+  border: none;
+    border-bottom: solid 2px #474544;
+    color: #474544;
+    font-size: 1.000em;
+  font-weight: 400;
+  letter-spacing: 1px;
+    margin: 0em 0 1.875em 0;
+    padding: 0 0 0.875em 0;
+  text-transform: uppercase;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+input[type='text']:focus, [type='email']:focus, textarea:focus {
+    outline: none;
+    padding: 0 0 0.875em 0;
+}
+
+.message {
+    float: none;
+}
+
+.name {
+    float: left;
+    width: 45%;
+}
+
+select {
+  background: url('https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-arrow-down-32.png') no-repeat right;
+  outline: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+.subject, .telephone {
+  width: 100%;
+}
+
+textarea {
+    line-height: 150%;
+    height: 150px;
+    resize: none;
+  width: 100%;
+}
+
+::-webkit-input-placeholder {
+    color: #474544;
+}
+
+:-moz-placeholder { 
+    color: #474544;
+    opacity: 1;
+}
+
+::-moz-placeholder {
+    color: #474544;
+    opacity: 1;
+}
+
+:-ms-input-placeholder {
+    color: #474544;
+}
+
+#form_button {
+  font-size: 25px;
+    display:inline-block;
+    padding: 15px 25px;
+    border: 1.75px solid rgba(0, 0, 0, 0.8);
+    margin: 20px 40px 50px 40px;
+    width: 250px;
+    box-sizing: border-box;
+    text-decoration:none;
+    color:rgba(0, 0, 0, 0.8);
+    text-align:center;
+    background-color: white;
+    transition: all 0.2s;
+}
+
+#form_button:hover {
+  color:#ffffff;
+    background-color:rgb(0, 0, 0, 0.8);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 650px) {
+  #form_button {
+      font-size: 18px;
+      padding: 15px 25px;
+      border: 1.75px solid rgba(0, 0, 0, 0.8);
+      margin: 20px 40px 50px 40px;
+      width: 170px;
+      }
+}
+
+@media screen and (max-width: 768px) {
+  #container {
+    margin: 20px auto;
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 26px;
+  }
+  
+  .underline {
+    width: 68px;
+  }
+  
+  #form_button {
+    padding: 15px 25px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  h1 {
+    font-size: 18px;
+  }
+  
+  .icon {
+    height: 35px;
+    width: 35px;
+  }
+  
+  .underline {
+    width: 53px;
+  }
+  
+  input[type='text'], [type='email'], select, textarea {
+    font-size: 0.875em;
+  }
+}
+
+
+/* HORIZONTAL LINE */
+
+hr {
+  width: 75%;
+}
+
+
+
+/* FOOTER */
+
+.staffhash {
+    font-size: 40px;
+    text-align: center;
+    padding: 30px 0px 10px 0px;
+}
+.follow, .phone, .dotemail, .follow a {
+    display: flex;
+    font-size: 25px;
+}
+.follow, .follow a {
+    text-align: center;
+    justify-content: center;
+}
+.phone, .dotemail, .icons {
+    display:inline-flex; 
+    justify-content: center;
+    margin: 40px 80px 60px 80px;
+}
+.footcontain {
+    text-align: center;
+    height: 250px;
+}
+.instaicon, .fbicon {
+    padding: 30px 20px;
+}
+.instaicon:hover, .fbicon:hover {
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 710px) {
+    .staffhash {
+        font-size: 33px;
+        text-align: center;
+        padding: 30px 0px 10px 0px;
+    }
+    .follow, .phone, .dotemail, .follow a {
+        display: flex;
+        font-size: 20px;
+    }
+    .phone, .dotemail, .icons {
+        margin: 40px 80px 0px 80px;
+    }
+    .footcontain {
+        height: 250px;
+    }
+    
+}
+
+@media screen and (max-width: 1150px) {
+    .phone, .dotemail, .icons {
+        margin: 30px 80px 0px 80px;
+    }    
+}

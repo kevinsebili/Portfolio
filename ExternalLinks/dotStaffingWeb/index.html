@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DoT Staffing NYC | 24/7 Support</title>
+        <link href="./home.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+        <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
+        <link rel="manifest" href="./images/site.webmanifest">
+        <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+        <script src="https://kit.fontawesome.com/a31c1820f2.js" crossorigin="anonymous"></script>
+        <script src="./home.js"></script>
+               
+    </head>
+    <body>
+        <header>
+            <nav class="topnav" id="myTopnav">
+                <a class="active"><strong>HOME</strong></a>
+                <a href="./about.html" style="text-decoration: none;">ABOUT</a>
+                <a href="./services.html" style="text-decoration: none;">SERVICES</a>
+                <a href="./join.html" style="text-decoration: none;">JOIN</a>
+                <a href="./contact.html" style="text-decoration: none;">CONTACT</a>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars fa-lg"></i>
+                      </a>
+            </nav>
+        </header>
+        <div class="backdrop">
+            <img src="./images/mansuitBWedited.png" alt="Caterwaiter with DoT Staffing Logo over image">
+        </div>
+        <div class="backdropsmall">
+            <img src="./images/mansuitBWedited.png" alt="Caterwaiter with DoT Staffing Logo over image">
+        </div>
+        <div class="clients">
+            <hr>
+                <p class="ourClients">OUR CLIENTS</p>
+        
+                <script type="text/javascript">
+
+                    /***********************************************
+                    * Conveyor belt slideshow script- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
+                    * Please keep this notice intact
+                    * Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
+                    ***********************************************/
+                    
+                    
+                    //Specify the slider's width (in pixels)
+                    var sliderwidth="2000px"
+                    //Specify the slider's height
+                    var sliderheight="325px"
+                    //Specify the slider's slide speed (larger is faster 1-10)
+                    var slidespeed=2
+                    //configure background color:
+                    slidebgcolor="#FFFFFF"
+                    
+                    //Specify the slider's images
+                    var leftrightslide=new Array()
+                    var finalslide=''
+                    leftrightslide[0]='<img class="nexus" src="./images/nexusLogo.png" alt="Nexus Club is our Client">'
+                    leftrightslide[1]='<img class="lgsquare" src="./images/LGsquareLogo.png" alt="LG square is our Client">'
+                    leftrightslide[2]='<img class="addidas" src="./images/addidas.png" alt="Addidas is our Client">'
+                    leftrightslide[3]='<img class="coolconf" src="./images/coolConfidenceLogo.png" alt="Cool Confidence is our Client">'
+                    leftrightslide[4]='<img class="lotus" src="./images/lotusThreadsLogo.png" alt="Lotus Thread is our Client">'
+                    
+                    //Specify gap between each image (use HTML):
+                    var imagegap=" "
+                    
+                    //Specify pixels gap between each slideshow rotation (use integer):
+                    var slideshowgap=5
+
+                    //SLIDE FUNCTIONALITY
+
+                    var copyspeed=slidespeed
+                    leftrightslide='<nobr>'+leftrightslide.join(imagegap)+'</nobr>'
+                    var iedom=document.all||document.getElementById
+                    if (iedom)
+                    document.write('<span id="temp" style="visibility:hidden;position:absolute;top:-100px;left:-9000px">'+leftrightslide+'</span>')
+                    var actualwidth=''
+                    var cross_slide, ns_slide
+                    
+                    function fillup(){
+                    if (iedom){
+                    cross_slide=document.getElementById? document.getElementById("test2") : document.all.test2
+                    cross_slide2=document.getElementById? document.getElementById("test3") : document.all.test3
+                    cross_slide.innerHTML=cross_slide2.innerHTML=leftrightslide
+                    actualwidth=document.all? cross_slide.offsetWidth : document.getElementById("temp").offsetWidth
+                    cross_slide2.style.left=actualwidth+slideshowgap+"px"
+                    }
+                    else if (document.layers){
+                    ns_slide=document.ns_slidemenu.document.ns_slidemenu2
+                    ns_slide2=document.ns_slidemenu.document.ns_slidemenu3
+                    ns_slide.document.write(leftrightslide)
+                    ns_slide.document.close()
+                    actualwidth=ns_slide.document.width
+                    ns_slide2.left=actualwidth+slideshowgap
+                    ns_slide2.document.write(leftrightslide)
+                    ns_slide2.document.close()
+                    }
+                    lefttime=setInterval("slideleft()",30)
+                    }
+                    window.onload=fillup
+                    
+                    function slideleft(){
+                    if (iedom){
+                    if (parseInt(cross_slide.style.left)>(actualwidth*(-1)+8))
+                    cross_slide.style.left=parseInt(cross_slide.style.left)-copyspeed+"px"
+                    else
+                    cross_slide.style.left=parseInt(cross_slide2.style.left)+actualwidth+slideshowgap+"px"
+                    
+                    if (parseInt(cross_slide2.style.left)>(actualwidth*(-1)+8))
+                    cross_slide2.style.left=parseInt(cross_slide2.style.left)-copyspeed+"px"
+                    else
+                    cross_slide2.style.left=parseInt(cross_slide.style.left)+actualwidth+slideshowgap+"px"
+                    
+                    }
+                    else if (document.layers){
+                    if (ns_slide.left>(actualwidth*(-1)+8))
+                    ns_slide.left-=copyspeed
+                    else
+                    ns_slide.left=ns_slide2.left+actualwidth+slideshowgap
+                    
+                    if (ns_slide2.left>(actualwidth*(-1)+8))
+                    ns_slide2.left-=copyspeed
+                    else
+                    ns_slide2.left=ns_slide.left+actualwidth+slideshowgap
+                    }
+                    }
+                    
+                    
+                    if (iedom||document.layers){
+                    with (document){
+                    document.write('<table border="0" cellspacing="0" cellpadding="0"><td>')
+                    if (iedom){
+                    write('<div style="position:relative;width:'+sliderwidth+';height:'+sliderheight+';overflow:hidden">')
+                    write('<div style="position:absolute;width:'+sliderwidth+';height:'+sliderheight+';background-color:'+slidebgcolor+'" onMouseover="copyspeed=0" onMouseout="copyspeed=slidespeed">')
+                    write('<div id="test2" style="position:absolute;left:0px;top:0px"></div>')
+                    write('<div id="test3" style="position:absolute;left:-1000px;top:0px"></div>')
+                    write('</div></div>')
+                    }
+                    else if (document.layers){
+                    write('<ilayer width='+sliderwidth+' height='+sliderheight+' name="ns_slidemenu" bgColor='+slidebgcolor+'>')
+                    write('<layer name="ns_slidemenu2" left=0 top=0 onMouseover="copyspeed=0" onMouseout="copyspeed=slidespeed"></layer>')
+                    write('<layer name="ns_slidemenu3" left=0 top=0 onMouseover="copyspeed=0" onMouseout="copyspeed=slidespeed"></layer>')
+                    write('</ilayer>')
+                    }
+                    document.write('</td></table>')
+                    }
+                    }
+                    </script>
+                     
+            <br>
+            <br>
+            <br>
+            <hr>
+        </div>
+    </body>
+    <footer>
+        <p class="staffhash">#DOTSTAFFING</p>
+        <p class="follow">Follow our sister site <a> @DoT Models</a></p>
+        <div class="footcontain">
+            <a class="phone">P: +1 917.727.3181</a>
+            <a class="email" href="./contact.html" style="text-decoration: none; color : #000000;">E: info@dotstaffingnyc.com</a>
+            <div class="icons">
+                <a class="instaicon" style="text-decoration: none; color : #000000;" href="https://www.instagram.com/dotstaffingnyc/" target="_blank"><i class="fab fa-instagram fa-3x"></i></a>
+                <a class="fbicon" style="text-decoration: none; color : #000000;" href="https://www.facebook.com/dotmodelstaffing" target="_blank"><i class="fab fa-facebook-f fa-3x"></i></a>
+            </div>
+        </div>
+    </footer>
+</html>

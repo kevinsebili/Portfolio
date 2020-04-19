@@ -1,0 +1,69 @@
+#backgroundSplash {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    padding: 0px 10px 0px 70px;
+}
+
+.typewriter {
+    font-size: 40px;
+    color: rgba(52, 128, 160, .95);
+    text-transform: uppercase;
+    text-align: center;
+    cursor: default;
+  }
+  
+  .test {
+    border-right: .05em solid;
+    animation: caret 1s steps(1) infinite;
+  }
+  
+  @keyframes caret {
+    50% {
+      border-color: transparent;
+    }
+  }
+
+  @media only screen and (max-width: 1000px) {
+    #backgroundSplash {
+      padding: 0px 10px 0px 50px;
+    }
+    .typewriter {
+      font-size: 35px;
+    }
+  }
+
+  @media only screen and (max-width: 800px) {
+    #backgroundSplash {
+      padding: 0px 10px 0px 30px;
+    }
+    .typewriter {
+      font-size: 30px;
+    }
+  }
+
+  @media only screen and (max-width: 670px) {
+    .typewriter {
+      font-size: 25px;
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    .typewriter {
+      font-size: 20px;
+      width: 100%;
+    }
+  }
+  
+
+  @media only screen and (max-width: 400px) {
+    #backgroundSplash {
+      padding: 0px 10px 0px 15px;
+      width: 100%;
+    } 
+
+  }
+
+ 
+  

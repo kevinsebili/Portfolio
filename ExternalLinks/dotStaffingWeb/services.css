@@ -1,0 +1,255 @@
+* {
+    font-family: 'Raleway', sans-serif;
+    font-size: 10px;
+}
+
+/* NAVIGATION */
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+nav a {
+    font-size: 1.8rem;
+    padding: 60px 80px;
+    color: rgba(0, 0, 0, 0.5);
+}
+nav a strong {
+    font-size: 1.8rem;
+    text-decoration: line-through;
+    transition: all 0.3s ease-in-out 0.0s;
+}
+nav a:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    color: black;
+    overflow: hidden;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
+}
+  
+/* When the screen is less than 1050 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 1050px) {
+    .topnav a:not(:first-child) {
+      display: none;
+    }
+    .topnav a.icon {
+      float: right;
+      display: block;
+      width: 100%;
+      text-align: right;
+    }
+    nav a {
+        padding: 20px 80px;
+    }
+    nav .home, nav .icon {
+        padding: 40px 80px;
+        z-index: 1;
+    }
+}
+  
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 1050px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .topnav.responsive {float: none;}
+    .topnav.responsive {position: relative;}
+    .topnav.responsive {
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
+}
+
+/* OUR SERVICES */
+
+.ourServices {
+    font-size: 3.7rem;
+    text-align: center;
+    padding: 0px 30px 20px 30px;
+    color: rgba(0, 0, 0, 0.5);
+}
+@media screen and (max-width: 600px) {
+    .ourServices {
+        font-size: 3rem;
+    }
+}
+
+.imgContent {
+    display: inline-flex;
+    width: 100%;
+}
+
+.promoModel, .bartend, .tempPerm {
+    text-align: center;
+    width: 100%;
+}
+@media screen and (max-width: 1375px) {
+    .imgContent {
+        display: inline-block;
+        width: 100%;
+    }
+}
+
+/* IMAGES FOR THE SERVICES */
+
+img {
+    max-width: 85%;
+    min-width: 30%;
+    height: auto;
+    padding: 0px 30px;
+}
+
+.blurb {
+text-align: center;
+}
+
+.blurb {
+    font-size: 2.3rem;
+    min-width: 300px;
+    max-width: 700px;
+    display: inline-flex;
+    padding: 0px 75px 50px 75px;
+    text-align: left;
+    line-height: 1.6;
+}
+
+@media screen and (max-width: 650px) {
+    .blurb {
+        font-size: 1.8rem;
+        min-width: 200px;
+        max-width: 400px;
+        padding: 0px 25px 30px 30px;
+    }
+    .title {
+        font-size: 2.1rem;
+        color: rgba(0, 0, 0, 0.5);
+    }   
+}
+
+@media screen and (min-width: 650px) {
+    .title {
+        font-size: 3rem;
+        color: rgba(0, 0, 0, 0.5);
+    }
+}
+
+/* BUTTONS */
+
+.buttons {
+    text-align: center;
+}
+
+button {
+    font-size: 2.5rem;
+    display:inline-block;
+    padding: 15px 25px;
+    border: 1.75px solid rgba(0, 0, 0, 0.8);
+    margin: 20px 40px 20px 40px;
+    width: 250px;
+    box-sizing: border-box;
+    text-decoration:none;
+    color:rgba(0, 0, 0, 0.8);
+    text-align:center;
+    background-color: white;
+    transition: all 0.2s;
+}
+button:hover{
+    color:#ffffff;
+    background-color:rgb(0, 0, 0, 0.8);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 650px) {
+    button {
+        font-size: 1.8rem;
+        padding: 15px 25px;
+        border: 1.75px solid rgba(0, 0, 0, 0.8);
+        margin: 20px 40px 20px 40px;
+        width: 170px;
+        }
+}
+
+
+/* HORIZONTAL LINE */
+
+hr {
+    width: 75%;
+  }
+
+/* FOOTER */
+
+.staffhash {
+    font-size: 4rem;
+    text-align: center;
+    padding: 30px 0px 10px 0px;
+}
+.follow, .phone, .email, .follow a {
+    display: flex;
+    font-size: 2.5rem;
+}
+.follow, .follow a {
+    text-align: center;
+    justify-content: center;
+}
+.phone, .email, .icons {
+    display:inline-flex; 
+    justify-content: center;
+    margin: 40px 80px 60px 80px;
+}
+.footcontain {
+    text-align: center;
+    height: 250px;
+}
+.instaicon, .fbicon {
+    padding: 30px 20px;
+}
+.instaicon:hover, .fbicon:hover {
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 710px) {
+    .staffhash {
+        font-size: 3.3rem;
+        text-align: center;
+        padding: 30px 0px 10px 0px;
+    }
+    .follow, .phone, .email, .follow a {
+        display: flex;
+        font-size: 2rem;
+    }
+    .phone, .email, .icons {
+        margin: 40px 80px 0px 80px;
+    }
+    .footcontain {
+        height: 250px;
+    }
+    
+}
+
+@media screen and (max-width: 1150px) {
+    .phone, .email, .icons {
+        margin: 30px 80px 0px 80px;
+    }    
+}
