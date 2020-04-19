@@ -1,0 +1,90 @@
+.title {
+    text-align: center;
+    cursor: default;
+}
+
+.title h1 {
+    font-size: 32px;
+    padding: 20px 15px 50px 15px;
+    color: rgba(52, 128, 160, .95);
+}
+
+.icons {
+    text-align: center;
+    padding: 0px 30px;
+}
+
+.icons #icon {
+    height: 80px;
+    width: 80px;
+    padding: 25px;
+    color: rgba(255, 255, 255, .9);
+    background-image: url("../images/abstractButton1.jpg");
+    margin: 5px 40px;
+    border-radius: 50%;
+    box-shadow: 0px 3px 18px #888888;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.icons #icon:hover {
+    transform: scale(1.1);
+}
+
+.justMe {
+    width: 100%;
+    text-align: center;
+}
+.justMePic {
+    
+    padding: 50px 30px 0px 30px;
+    width: 40%;
+}
+
+
+@media only screen and (max-width: 730px) {
+    .icons #icon {
+        height: 70px;
+        width: 70px;
+        padding: 20px;
+        margin: 5px 30px;
+    }
+  }
+
+@media only screen and (max-width: 610px) {
+    .icons #icon {
+        margin: 25px 25px;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .justMePic {
+        width: 60%;
+    }
+  }
+
+@media only screen and (max-width: 570px) {
+    .title h1 {
+        font-size: 25px;
+        padding: 15px 15px 20px 15px;
+    } 
+  }
+
+@media only screen and (max-width: 445px) {
+    .title h1 {
+        font-size: 22px;
+        padding: 5px 15px 20px 15px;
+    } 
+    .justMePic {
+        width: 80%;
+    }
+  }
+
+@media only screen and (max-width: 380px) {
+    .title h1 {
+        font-size: 18px;
+    }
+    .icons #icon {
+        margin: 23px 23px;
+    }
+
+  }

@@ -1,0 +1,91 @@
+* {
+    font-family: 'Michroma', sans-serif;
+}
+
+.buttonContainer1, .buttonContainer2, .buttonContainer3, .buttonContainer4, 
+.buttonContainer5, .buttonContainer6, .buttonContainer7  {
+    width: 100%;
+    height: 75px;
+    transform: translate(-50%, -50%);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+  }
+
+.buttonContainer1 {
+    top: 10%;
+}
+.buttonContainer2 {
+    top: 23%;
+}
+.buttonContainer3 {
+    top: 36%;
+}
+.buttonContainer4 {
+    top: 49%;
+}
+.buttonContainer5 {
+    top: 62%;
+}
+.buttonContainer6 {
+    top: 75%;
+}
+.buttonContainer7 {
+    top: 88%;
+}
+  
+  
+  .center {
+    width: 180px;
+    height: 60px;
+    position: absolute;
+  }
+  
+  .btn {
+    width: 180px;
+    height: 60px;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid rgba(126, 126, 126, 0.7);
+    outline: none;
+    transition: 1s ease-in-out;
+  }
+  
+  .border {
+    position: absolute;
+    left: 0;
+    top: 0;
+    fill: none;
+    stroke: rgba(103, 202, 245, 1);
+    stroke-dasharray: 150 480;
+    stroke-dashoffset: 150;
+    transition: 1s ease-in-out;
+  }
+  
+  .btn:hover {
+    transition: 1s ease-in-out;
+    background: rgba(196, 147, 151, .2);
+  }
+  
+  .btn:hover .border {
+    stroke-dashoffset: -480;
+  }
+  
+  .buttonContent {
+    color: rgba(52, 128, 160, .95);
+    font-size: 16px;
+    font-weight: 100;
+  }
+    
+  .buttonContent:hover {
+    color: white;
+  }
+  
+  .btn:active {
+    transform: scale(1.1, 1.1);
+    transition: none;
+    background-color: rgba(126, 126, 126, 0.1);
+  }
+  
